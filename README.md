@@ -7,7 +7,7 @@ ROS2 Python 패키지를 사용합니다.
 
 
 
-### 구조 설명
+# 구조 설명
 현재 보이는 두 폴더는 워크스페이스 내의 src 폴더 안에 들어갈 패키지
 ```sh
 cd ~/<워크스페이스>/src
@@ -23,13 +23,8 @@ vision_sample 폴더 안에 my_cv, robot_msgs 폴더 2개가 보일 것
 완료했다면 <워크스페이스>/src 안에 정상적으로 패키지 2개가 설치된 것
 
 
-#### my_cv
+## my_cv
 영상처리 관련 실행 파일들이 들어있는 python 패키지.
-
-realsense 카메라를 실행시키는 rs_launch.py가 들어있는 launch 폴더와
-여러 코드 실행 파일들이 들어있는 src 폴더,
-이 패키지가 무엇이고, 무엇이 필요하고, 어떻게 빌드되는지 설명해주는 package.xml,
-Python 패키지를 설치하고 등록하는 파일인 setup.py로 이루어짐
 
 > 패키지 이름을 내 맘대로 바꾸고 싶다면?
 1. /my_cv/package.xml 파일에 들어간다
@@ -37,7 +32,7 @@ Python 패키지를 설치하고 등록하는 파일인 setup.py로 이루어짐
 3. 같은 패키지 폴더 안의 setup.py 파일에 들어간다
 4. package_name = 'my_cv' 에서 "my_cv"를 동일한 이름으로 바꿔준다
 
-#### robot_msgs
+# robot_msgs
 ros2 토픽, 서비스 등에 사용되는 메세지들을 정의하는 패키지
 
 자세한 건 핑크랩,,,
