@@ -19,7 +19,7 @@ ls
 <워크스페이스>에 각자 워크스페이스 이름 넣고 위를 터미널에서 실행하면,
 vision_sample 폴더 안에 my_cv, robot_msgs 폴더 2개가 보일 것
 
-그 두 폴더는 패키지이니 vision_sample 폴더에서 빼서 src 폴더 안에 넣어주자. 그리고 vision_sample 폴더는 삭제.
+그 두 폴더는 패키지이니 vision_sample 폴더에서 빼서 상위 폴더인 src에 넣어주자. 그리고 vision_sample 폴더는 삭제.
 완료했다면 <워크스페이스>/src 안에 정상적으로 패키지 2개가 설치된 것
 
 
