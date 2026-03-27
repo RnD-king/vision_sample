@@ -8,7 +8,7 @@ ROS2 Python 패키지를 사용합니다.
 
 
 # 구조 설명
-현재 보이는 두 폴더는 워크스페이스 내의 src 폴더 안에 들어갈 패키지임
+현재 보이는 두 폴더(my_cv, robots_msgs)는 워크스페이스 내의 src 폴더 안에 들어갈 패키지임
 ```sh
 cd ~/<워크스페이스>/src
 git clone --no-checkout https://github.com/RnD-king/vision_sample.git
