@@ -286,15 +286,16 @@ class ImgSubscriber(Node):
                 self.yolo = True
                 print("Miss")
         
-        msg_array = LinePointsArray() # 튜플로
-        for (cx, cy, lost) in candidates: 
-            msg = LinePoint() # (cx, cy, lost)
-            msg.cx = cx
-            msg.cy = cy
-            msg.lost = lost
-            msg_array.points.append(msg) # [(cx, cy, lost), (cx, cy, lost),,,,,,,,,]
-        self.line_publisher.publish(msg_array)
-        print(msg_array)
+        if candidates:
+            msg_array = LinePointsArray() # 튜플로
+            for (cx, cy, lost) in candidates: 
+                msg = LinePoint() # (cx, cy, lost)
+                msg.cx = cx
+                msg.cy = cy
+                msg.lost = lost
+                msg_array.points.append(msg) # [(cx, cy, lost), (cx, cy, lost),,,,,,,,,]
+            self.line_publisher.publish(msg_array)
+            print(msg_array)
 
         cv_image[self.roi_y_start:self.roi_y_end, self.roi_x_start:self.roi_x_end] = bgr_image  # 전체화면
         cv2.rectangle(cv_image, (self.roi_x_start - 1, self.roi_y_start - 1), (self.roi_x_end + 1, self.roi_y_end), (0, 255, 0), 1) # ROI 구역 표시
