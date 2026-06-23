@@ -2,9 +2,10 @@ path: /home/noh/dataset
 train: images/train
 val: images/val
 
-nc: 4
+nc: 5
 names:
   0: line
   1: ball
-  2: backboard
-  3: hurdle
+  2: goal
+  3: backboard
+  4: hurdle
