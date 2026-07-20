@@ -35,7 +35,7 @@ python 패키지의 src 폴더에 필수적으로 들어가야하는 파일.
 내가 설정한 hsv 색공간 범위의 색만 화면에 출력하는 코드.
 
 만약 주황색만 걸러내고 싶다면, 먼저 구글에 hsv 색상표를 검색해서 주황색에 맞는 H,S,V 값들을 알아내자.  
-https://ko.rakko.tools/tools/30/  
+https://rakko.tools/ko/tools/color-picker
 값을 알아냈다면 코드에 상수로 직접 넣거나, rqt의 Parameter Reconfigure에서 파라미터 값을 조정해가며  
 어떤 부분이 카메라에서 주황색으로 보이는지 확인할 수 있다.
 
